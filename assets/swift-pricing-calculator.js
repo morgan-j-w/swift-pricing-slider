@@ -91,6 +91,7 @@
 
     if (selectedMode === "government") {
       smarterSending.textContent = "Up to 35% fewer sends";
+      smarterSending.classList.remove("green-text");
       featureList.innerHTML = `
         <li>Role-based governance and approval workflows</li>
         <li>Auditability and communication controls</li>
@@ -100,6 +101,7 @@
       highlightBox.textContent = "Built for organisations where compliance, control and trust matter as much as volume.";
     } else {
       smarterSending.textContent = "Up to 25% fewer sends";
+      smarterSending.classList.add("green-text");
       featureList.innerHTML = `
         <li>Audience segmentation and campaign management</li>
         <li>Workflow and approval support</li>
