@@ -1,0 +1,153 @@
+#swift-pricing-calculator {
+  font-family: Arial, sans-serif;
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  color: #1f2937;
+}
+#swift-pricing-calculator h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  line-height: 1.2;
+}
+#swift-pricing-calculator p.subtext {
+  margin: 0 0 24px;
+  color: #4b5563;
+  font-size: 15px;
+}
+#swift-pricing-calculator .grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+}
+#swift-pricing-calculator .card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+}
+#swift-pricing-calculator label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+#swift-pricing-calculator .range-wrap {
+  margin-bottom: 24px;
+}
+#swift-pricing-calculator input[type="range"] {
+  width: 100%;
+  margin: 8px 0 6px;
+}
+#swift-pricing-calculator .range-value {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+#swift-pricing-calculator .help {
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
+}
+#swift-pricing-calculator .frequency-options,
+#swift-pricing-calculator .mode-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#swift-pricing-calculator .pill {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 999px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+#swift-pricing-calculator .pill.active {
+  background: #111827;
+  color: #fff;
+  border-color: #111827;
+}
+#swift-pricing-calculator .result-main {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 8px 0 4px;
+}
+#swift-pricing-calculator .result-sub {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+#swift-pricing-calculator .stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+#swift-pricing-calculator .stat {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+}
+#swift-pricing-calculator .stat .k {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+#swift-pricing-calculator .stat .v {
+  font-size: 18px;
+  font-weight: 700;
+}
+#swift-pricing-calculator ul {
+  margin: 0;
+  padding-left: 18px;
+}
+#swift-pricing-calculator li {
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 14px;
+}
+#swift-pricing-calculator .highlight {
+  margin-top: 18px;
+  background: #eef6ff;
+  border: 1px solid #cfe2ff;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 14px;
+  color: #1f2937;
+}
+#swift-pricing-calculator .footer-note {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+#swift-pricing-calculator .cta {
+  margin-top: 18px;
+  display: inline-block;
+  text-decoration: none;
+  background: #111827;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+@media (max-width: 800px) {
+  #swift-pricing-calculator .grid {
+    grid-template-columns: 1fr;
+  }
+  #swift-pricing-calculator .stats {
+    grid-template-columns: 1fr;
+  }
+}

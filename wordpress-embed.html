@@ -1,0 +1,83 @@
+<div id="swift-pricing-calculator">
+  <h2>Estimate your communication investment</h2>
+  <p class="subtext">
+    Built for organisations that need secure, compliant, high-volume communications with smarter targeting and governance.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="range-wrap">
+        <label for="contactsRange">How many contacts do you communicate with?</label>
+        <div class="range-value" id="contactsValue">100,000 contacts</div>
+        <input type="range" id="contactsRange" min="0" max="6" step="1" value="3">
+        <div class="help">Choose the audience size that best matches your organisation.</div>
+      </div>
+
+      <div>
+        <label>How often do you communicate?</label>
+        <div class="frequency-options" id="frequencyOptions">
+          <button class="pill active" data-frequency="1" type="button">Monthly</button>
+          <button class="pill" data-frequency="2" type="button">Fortnightly</button>
+          <button class="pill" data-frequency="4" type="button">Weekly</button>
+          <button class="pill" data-frequency="8" type="button">Twice weekly</button>
+        </div>
+      </div>
+
+      <div>
+        <label>Use case</label>
+        <div class="mode-options" id="modeOptions">
+          <button class="pill active" data-mode="standard" type="button">Standard</button>
+          <button class="pill" data-mode="government" type="button">Government / Compliance</button>
+        </div>
+        <div class="help">
+          Government / Compliance mode adds governance, auditability and workflow value into the estimate framing.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="result-sub">Estimated monthly investment</div>
+      <div class="result-main" id="monthlyCost">$1,700</div>
+      <div class="result-sub" id="monthlyVolume">Approx. 100,000 messages / month</div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="k">Estimated cost per stakeholder reached</div>
+          <div class="v" id="costPerStakeholder">$0.0170</div>
+        </div>
+        <div class="stat">
+          <div class="k">Estimated cost per 1,000 messages</div>
+          <div class="v" id="costPerThousand">$17.00</div>
+        </div>
+        <div class="stat">
+          <div class="k">Smarter sending estimate</div>
+          <div class="v" id="smarterSending">Up to 25% fewer sends</div>
+        </div>
+        <div class="stat">
+          <div class="k">Recommended fit</div>
+          <div class="v" id="recommendedFit">Mid-size teams</div>
+        </div>
+      </div>
+
+      <ul id="featureList">
+        <li>Audience segmentation and campaign management</li>
+        <li>Workflow and approval support</li>
+        <li>Reporting and operational visibility</li>
+        <li>Designed for higher-control communication environments</li>
+      </ul>
+
+      <div class="highlight" id="highlightBox">
+        You don’t need cheaper emails — you need fewer of them, sent with more control.
+      </div>
+
+      <div class="footer-note">
+        This is an indicative estimator for website optics and early buyer qualification. Final pricing can vary based on channels, workflow complexity, support needs and integration scope.
+      </div>
+
+      <a class="cta" href="/contact/">Talk to Swift Digital</a>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="assets/swift-pricing-calculator.css">
+<script src="assets/swift-pricing-calculator.js"></script>
