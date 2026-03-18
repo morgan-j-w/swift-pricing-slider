@@ -16,7 +16,6 @@
 
   let selectedFrequency = 1;
   let selectedMode = "standard";
-  let selectedIndustry = "government";
 
   const contactsRange = document.getElementById("contactsRange");
   const contactsValue = document.getElementById("contactsValue");
@@ -118,14 +117,6 @@
     });
   });
 
-  document.querySelectorAll("#modeOptions .pill").forEach((btn) => {
-    btn.addEventListener("click", function () {
-      document.querySelectorAll("#modeOptions .pill").forEach((b) => b.classList.remove("active"));
-      this.classList.add("active");
-      selectedMode = this.getAttribute("data-mode");
-      calculate();
-    });
-  });
 
   document.querySelectorAll("#industryOptions .pill").forEach((btn) => {
     btn.addEventListener("click", function () {
