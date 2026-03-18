@@ -35,83 +35,84 @@
         Built for organisations that need secure, compliant, high-volume communications with smarter targeting and governance.
       </p>
 
-      <div class="inputs-section">
-        <div class="range-wrap">
-          <label for="contactsRange">How many contacts do you communicate with?</label>
-          <div class="range-value" id="contactsValue">100,000 contacts</div>
-          <input type="range" id="contactsRange" min="0" max="6" step="1" value="3" list="contactSteps" style="cursor: pointer;">
-          <datalist id="contactSteps">
-            <option value="0"></option>
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5"></option>
-            <option value="6"></option>
-          </datalist>
-          <div class="range-labels" id="rangeLabels">
-            <span class="range-label" data-value="0">5K</span>
-            <span class="range-label" data-value="1">10K</span>
-            <span class="range-label" data-value="2">50K</span>
-            <span class="range-label" data-value="3">100K</span>
-            <span class="range-label" data-value="4">250K</span>
-            <span class="range-label" data-value="5">500K</span>
-            <span class="range-label" data-value="6">1M</span>
+      <div class="grid">
+        <div class="card">
+          <div class="range-wrap">
+            <label for="contactsRange">How many contacts do you communicate with?</label>
+            <div class="range-value" id="contactsValue">100,000 contacts</div>
+            <input type="range" id="contactsRange" min="0" max="6" step="1" value="3" list="contactSteps" style="cursor: pointer;">
+            <datalist id="contactSteps">
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+            </datalist>
+            <div class="range-labels" id="rangeLabels">
+              <span class="range-label" data-value="0">5K</span>
+              <span class="range-label" data-value="1">10K</span>
+              <span class="range-label" data-value="2">50K</span>
+              <span class="range-label" data-value="3">100K</span>
+              <span class="range-label" data-value="4">250K</span>
+              <span class="range-label" data-value="5">500K</span>
+              <span class="range-label" data-value="6">1M</span>
+            </div>
+            <div class="help">Choose the audience size that best matches your organisation.</div>
           </div>
-          <div class="help">Choose the audience size that best matches your organisation.</div>
+
+          <div>
+            <label>How often do you communicate?</label>
+            <div class="frequency-options" id="frequencyOptions">
+              <button class="pill active" data-frequency="1" type="button">Monthly</button>
+              <button class="pill" data-frequency="2" type="button">Fortnightly</button>
+              <button class="pill" data-frequency="4" type="button">Weekly</button>
+              <button class="pill" data-frequency="8" type="button">Twice weekly</button>
+            </div>
+          </div>
+
+          <div>
+            <label>Your industry</label>
+            <div class="industry-options" id="industryOptions">
+              <button class="pill active" data-industry="government" type="button">Government</button>
+              <button class="pill" data-industry="education" type="button">Education</button>
+              <button class="pill" data-industry="financial" type="button">Financial Services</button>
+              <button class="pill" data-industry="healthcare" type="button">Healthcare</button>
+              <button class="pill" data-industry="utilities" type="button">Utilities</button>
+              <button class="pill" data-industry="other" type="button">Other</button>
+            </div>
+          </div>
+
+          <div>
+            <label>Use case</label>
+            <div class="mode-options" id="modeOptions">
+              <button class="pill active" data-mode="standard" type="button">Standard</button>
+              <button class="pill" data-mode="government" type="button">Government / Compliance</button>
+            </div>
+            <div class="help">
+              Government / Compliance mode adds governance, auditability and workflow value into the estimate framing.
+            </div>
+          </div>
         </div>
 
-        <div>
-          <label>How often do you communicate?</label>
-          <div class="frequency-options" id="frequencyOptions">
-            <button class="pill active" data-frequency="1" type="button">Monthly</button>
-            <button class="pill" data-frequency="2" type="button">Fortnightly</button>
-            <button class="pill" data-frequency="4" type="button">Weekly</button>
-            <button class="pill" data-frequency="8" type="button">Twice weekly</button>
-          </div>
-        </div>
+        <div class="card">
+          <div class="result-sub">Estimated monthly investment</div>
+          <div class="result-main" id="monthlyCost">$1,700</div>
+          <div class="result-sub" id="monthlyVolume">Approx. 100,000 messages / month</div>
 
-        <div>
-          <label>Your industry</label>
-          <div class="industry-options" id="industryOptions">
-            <button class="pill active" data-industry="government" type="button">Government</button>
-            <button class="pill" data-industry="education" type="button">Education</button>
-            <button class="pill" data-industry="financial" type="button">Financial Services</button>
-            <button class="pill" data-industry="healthcare" type="button">Healthcare</button>
-            <button class="pill" data-industry="utilities" type="button">Utilities</button>
-            <button class="pill" data-industry="other" type="button">Other</button>
-          </div>
-        </div>
-
-        <div>
-          <label>Use case</label>
-          <div class="mode-options" id="modeOptions">
-            <button class="pill active" data-mode="standard" type="button">Standard</button>
-            <button class="pill" data-mode="government" type="button">Government / Compliance</button>
-          </div>
-          <div class="help">
-            Government / Compliance mode adds governance, auditability and workflow value into the estimate framing.
-          </div>
-        </div>
-      </div>
-
-      <div class="results-section">
-        <div class="result-sub">Estimated monthly investment</div>
-        <div class="result-main" id="monthlyCost">$1,700</div>
-        <div class="result-sub" id="monthlyVolume">Approx. 100,000 messages / month</div>
-
-        <div class="stats">
-          <div class="stat">
-            <div class="k">Estimated cost per stakeholder reached</div>
-            <div class="v" id="costPerStakeholder">$0.0170</div>
-          </div>
-          <div class="stat">
-            <div class="k">Estimated cost per 1,000 messages</div>
-            <div class="v" id="costPerThousand">$17.00</div>
-          </div>
-          <div class="stat">
-            <div class="k">Smarter sending estimate</div>
-            <div class="v" id="smarterSending">Up to 25% fewer sends</div>
+          <div class="stats">
+            <div class="stat">
+              <div class="k">Estimated cost per stakeholder reached</div>
+              <div class="v" id="costPerStakeholder">$0.0170</div>
+            </div>
+            <div class="stat">
+              <div class="k">Estimated cost per 1,000 messages</div>
+              <div class="v" id="costPerThousand">$17.00</div>
+            </div>
+            <div class="stat">
+              <div class="k">Smarter sending estimate</div>
+              <div class="v" id="smarterSending">Up to 25% fewer sends</div>
             </div>
             <div class="stat">
               <div class="k">Recommended fit</div>
