@@ -76,9 +76,9 @@
   user-select: none;
 }
 #swift-pricing-calculator .pill.active {
-  background: #111827;
+  background: #ec2176;
   color: #fff;
-  border-color: #111827;
+  border-color: #ec2176;
 }
 #swift-pricing-calculator .result-main {
   font-family: 'Lato', sans-serif;
@@ -146,7 +146,7 @@
   margin-top: 18px;
   display: inline-block;
   text-decoration: none;
-  background: #111827;
+  background: #ec2176;
   color: #fff;
   padding: 12px 24px;
   border-radius: 10px;
@@ -156,7 +156,7 @@
   transition: background 0.2s ease;
 }
 #swift-pricing-calculator .cta:hover {
-  background: #1f2937;
+  background: #d81a63;
 }
 @media (max-width: 800px) {
   #swift-pricing-calculator .grid {
