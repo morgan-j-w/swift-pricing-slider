@@ -44,6 +44,25 @@
 #swift-pricing-calculator .range-wrap {
   margin-bottom: 24px;
 }
+#swift-pricing-calculator .range-labels {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0 4px 0;
+  padding: 0;
+}
+#swift-pricing-calculator .range-label {
+  font-size: 11px;
+  color: #6b7280;
+  font-weight: 500;
+  text-align: center;
+  flex: 1;
+}
+#swift-pricing-calculator .range-label:first-child {
+  text-align: left;
+}
+#swift-pricing-calculator .range-label:last-child {
+  text-align: right;
+}
 #swift-pricing-calculator input[type="range"] {
   width: 100%;
   margin: 8px 0 6px;

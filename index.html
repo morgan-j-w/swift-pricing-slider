@@ -26,7 +26,25 @@
           <div class="range-wrap">
             <label for="contactsRange">How many contacts do you communicate with?</label>
             <div class="range-value" id="contactsValue">100,000 contacts</div>
-            <input type="range" id="contactsRange" min="0" max="6" step="1" value="3">
+            <input type="range" id="contactsRange" min="0" max="6" step="1" value="3" list="contactSteps">
+            <datalist id="contactSteps">
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+            </datalist>
+            <div class="range-labels" id="rangeLabels">
+              <span class="range-label" data-value="0">5K</span>
+              <span class="range-label" data-value="1">10K</span>
+              <span class="range-label" data-value="2">50K</span>
+              <span class="range-label" data-value="3">100K</span>
+              <span class="range-label" data-value="4">250K</span>
+              <span class="range-label" data-value="5">500K</span>
+              <span class="range-label" data-value="6">1M</span>
+            </div>
             <div class="help">Choose the audience size that best matches your organisation.</div>
           </div>
 
