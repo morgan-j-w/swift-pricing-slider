@@ -39,12 +39,10 @@
 
   function alignLabels() {
     const rangeLabels = document.querySelectorAll("#swift-pricing-calculator .range-label");
-    const sliderWidth = contactsRange.offsetWidth;
-    const maxSteps = 6;
     
     rangeLabels.forEach((label) => {
       const value = parseInt(label.getAttribute("data-value"), 10);
-      const percentage = (value / maxSteps) * 100;
+      const percentage = (value / 6) * 100;
       label.style.left = percentage + "%";
     });
   }
