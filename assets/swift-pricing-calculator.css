@@ -50,28 +50,31 @@
   -webkit-appearance: none;
   appearance: none;
   height: 6px;
-  background: #e5e7eb;
+  background: linear-gradient(to right, #ec2176 0%, #ec2176 50%, #e5e7eb 50%, #e5e7eb 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   border-radius: 3px;
   outline: none;
 }
 #swift-pricing-calculator input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background: #ec2176;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(236, 33, 118, 0.2);
+  box-shadow: 0 2px 8px rgba(236, 33, 118, 0.3);
+  border: none;
 }
 #swift-pricing-calculator input[type="range"]::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background: #ec2176;
   border-radius: 50%;
   cursor: pointer;
   border: none;
-  box-shadow: 0 2px 4px rgba(236, 33, 118, 0.2);
+  box-shadow: 0 2px 8px rgba(236, 33, 118, 0.3);
 }
 #swift-pricing-calculator input[type="range"]::-moz-range-track {
   background: transparent;

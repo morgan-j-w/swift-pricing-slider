@@ -32,6 +32,11 @@
     return num.toLocaleString("en-AU");
   }
 
+  function updateSliderBackground() {
+    const value = (contactsRange.value - contactsRange.min) / (contactsRange.max - contactsRange.min) * 100;
+    contactsRange.style.background = `linear-gradient(to right, #ec2176 0%, #ec2176 ${value}%, #e5e7eb ${value}%, #e5e7eb 100%)`;
+  }
+
   function formatCurrency(num) {
     return new Intl.NumberFormat("en-AU", {
       style: "currency",
@@ -109,6 +114,10 @@
     });
   });
 
-  contactsRange.addEventListener("input", calculate);
+  contactsRange.addEventListener("input", function() {
+    calculate();
+    updateSliderBackground();
+  });
   calculate();
+  updateSliderBackground();
 })();
