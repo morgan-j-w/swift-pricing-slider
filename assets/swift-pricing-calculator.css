@@ -100,43 +100,43 @@
   padding: 0;
   -webkit-appearance: none;
   appearance: none;
-  height: 6px;
-  background: linear-gradient(to right, #ec2176 0%, #ec2176 50%, #e5e7eb 50%, #e5e7eb 100%);
+  height: 8px;
+  background: linear-gradient(to right, #21292C 0%, #21292C 50%, #d1d5db 50%, #d1d5db 100%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  border-radius: 3px;
+  border-radius: 4px;
   outline: none;
 }
 #swift-pricing-calculator input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 24px;
-  height: 24px;
-  background: #ec2176;
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(236, 33, 118, 0.3);
-  border: none;
-  margin-top: -9px;
+  border: 3px solid #21292C;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin-top: -10px;
 }
 #swift-pricing-calculator input[type="range"]::-moz-range-thumb {
-  width: 24px;
-  height: 24px;
-  background: #ec2176;
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
   border-radius: 50%;
   cursor: pointer;
-  border: none;
-  box-shadow: 0 2px 8px rgba(236, 33, 118, 0.3);
-  margin-top: -9px;
+  border: 3px solid #21292C;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin-top: -10px;
 }
 #swift-pricing-calculator input[type="range"]::-moz-range-track {
   background: transparent;
   border: none;
 }
 #swift-pricing-calculator input[type="range"]::-moz-range-progress {
-  background: #ec2176;
-  height: 6px;
-  border-radius: 3px;
+  background: #21292C;
+  height: 8px;
+  border-radius: 4px;
 }
 #swift-pricing-calculator .range-value {
   font-size: 20px;

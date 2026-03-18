@@ -34,7 +34,7 @@
 
   function updateSliderBackground() {
     const value = (contactsRange.value - contactsRange.min) / (contactsRange.max - contactsRange.min) * 100;
-    contactsRange.style.background = `linear-gradient(to right, #ec2176 0%, #ec2176 ${value}%, #e5e7eb ${value}%, #e5e7eb 100%)`;
+    contactsRange.style.background = `linear-gradient(to right, #21292C 0%, #21292C ${value}%, #d1d5db ${value}%, #d1d5db 100%)`;
   }
 
   function alignLabels() {
