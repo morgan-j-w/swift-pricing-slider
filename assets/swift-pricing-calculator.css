@@ -84,6 +84,15 @@
   white-space: nowrap;
   transform: translateX(-50%);
 }
+#swift-pricing-calculator .range-label:first-child {
+  left: 0;
+  transform: translateX(0);
+}
+#swift-pricing-calculator .range-label:last-child {
+  right: 0;
+  left: auto;
+  transform: translateX(0);
+}
 #swift-pricing-calculator input[type="range"] {
   width: 100%;
   margin: 0;

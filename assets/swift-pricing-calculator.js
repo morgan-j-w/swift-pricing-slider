@@ -39,8 +39,12 @@
 
   function alignLabels() {
     const rangeLabels = document.querySelectorAll("#swift-pricing-calculator .range-label");
+    const totalLabels = rangeLabels.length;
     
-    rangeLabels.forEach((label) => {
+    rangeLabels.forEach((label, index) => {
+      // Skip first and last labels - they're handled by CSS
+      if (index === 0 || index === totalLabels - 1) return;
+      
       const value = parseInt(label.getAttribute("data-value"), 10);
       const percentage = (value / 6) * 100;
       label.style.left = percentage + "%";
