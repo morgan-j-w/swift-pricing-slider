@@ -9,6 +9,28 @@
   box-shadow: 0 8px 24px rgba(0,0,0,0.06);
   color: #1f2937;
 }
+#swift-pricing-calculator .trust-badges {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+#swift-pricing-calculator .badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+#swift-pricing-calculator .badge-icon {
+  font-size: 16px;
+}
+#swift-pricing-calculator .badge-text {
+  white-space: nowrap;
+}
 #swift-pricing-calculator h2 {
   font-family: 'Lato', sans-serif;
   margin: 0 0 8px;
@@ -221,10 +243,25 @@
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 15px;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
 }
 #swift-pricing-calculator .cta:hover {
   background: #d81a63;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(236, 33, 118, 0.25);
+}
+#swift-pricing-calculator .cta-section {
+  background: #fef3f8;
+  border-left: 4px solid #ec2176;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+#swift-pricing-calculator .cta-subtext {
+  margin: 0 0 12px 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
 }
 @media (max-width: 800px) {
   #swift-pricing-calculator .grid {
