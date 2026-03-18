@@ -47,6 +47,40 @@
 #swift-pricing-calculator input[type="range"] {
   width: 100%;
   margin: 8px 0 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 3px;
+  outline: none;
+}
+#swift-pricing-calculator input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #ec2176;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(236, 33, 118, 0.2);
+}
+#swift-pricing-calculator input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #ec2176;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(236, 33, 118, 0.2);
+}
+#swift-pricing-calculator input[type="range"]::-moz-range-track {
+  background: transparent;
+  border: none;
+}
+#swift-pricing-calculator input[type="range"]::-moz-range-progress {
+  background: #ec2176;
+  height: 6px;
+  border-radius: 3px;
 }
 #swift-pricing-calculator .range-value {
   font-size: 20px;
