@@ -37,6 +37,18 @@
     contactsRange.style.background = `linear-gradient(to right, #ec2176 0%, #ec2176 ${value}%, #e5e7eb ${value}%, #e5e7eb 100%)`;
   }
 
+  function alignLabels() {
+    const rangeLabels = document.querySelectorAll("#swift-pricing-calculator .range-label");
+    const sliderWidth = contactsRange.offsetWidth;
+    const maxSteps = 6;
+    
+    rangeLabels.forEach((label) => {
+      const value = parseInt(label.getAttribute("data-value"), 10);
+      const percentage = (value / maxSteps) * 100;
+      label.style.left = percentage + "%";
+    });
+  }
+
   function formatCurrency(num) {
     return new Intl.NumberFormat("en-AU", {
       style: "currency",
@@ -120,4 +132,7 @@
   });
   calculate();
   updateSliderBackground();
+  alignLabels();
+  
+  window.addEventListener("resize", alignLabels);
 })();

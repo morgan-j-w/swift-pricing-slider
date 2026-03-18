@@ -45,8 +45,7 @@
   margin-bottom: 24px;
 }
 #swift-pricing-calculator .range-labels {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   margin: 16px 0 8px 0;
   padding: 0;
   position: relative;
@@ -61,14 +60,8 @@
   bottom: 0;
   width: auto;
   white-space: nowrap;
+  transform: translateX(-50%);
 }
-#swift-pricing-calculator .range-label[data-value="0"] { left: 0%; transform: translateX(-50%); }
-#swift-pricing-calculator .range-label[data-value="1"] { left: 16.67%; transform: translateX(-50%); }
-#swift-pricing-calculator .range-label[data-value="2"] { left: 33.33%; transform: translateX(-50%); }
-#swift-pricing-calculator .range-label[data-value="3"] { left: 50%; transform: translateX(-50%); }
-#swift-pricing-calculator .range-label[data-value="4"] { left: 66.67%; transform: translateX(-50%); }
-#swift-pricing-calculator .range-label[data-value="5"] { left: 83.33%; transform: translateX(-50%); }
-#swift-pricing-calculator .range-label[data-value="6"] { left: 100%; transform: translateX(-50%); }
 #swift-pricing-calculator .range-label::before {
   content: '';
   position: absolute;
