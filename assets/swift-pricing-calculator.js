@@ -39,18 +39,12 @@
 
   function alignLabels() {
     const rangeLabels = document.querySelectorAll("#swift-pricing-calculator .range-label");
-    const rangeLabelsContainer = document.getElementById("rangeLabels");
-    const maxValue = parseInt(contactsRange.getAttribute("max"), 10);
-    
-    // Get the actual pixel width of the slider track area
-    const sliderRect = contactsRange.getBoundingClientRect();
     const sliderWidth = contactsRange.offsetWidth;
-    const containerWidth = rangeLabelsContainer.offsetWidth;
+    const maxSteps = 6;
     
     rangeLabels.forEach((label) => {
       const value = parseInt(label.getAttribute("data-value"), 10);
-      // Calculate percentage based on max value
-      const percentage = (value / maxValue) * 100;
+      const percentage = (value / maxSteps) * 100;
       label.style.left = percentage + "%";
     });
   }
