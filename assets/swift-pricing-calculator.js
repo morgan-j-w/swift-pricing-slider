@@ -136,24 +136,6 @@
     });
   });
 
-  // Email form handling
-  const emailForm = document.getElementById("emailForm");
-  const emailFormOverlay = document.getElementById("emailFormOverlay");
-  const emailInput = document.getElementById("emailInput");
-  
-  if (emailForm) {
-    emailForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const email = emailInput.value;
-      
-      // Store email in localStorage (optional - you can send this to your backend)
-      localStorage.setItem("pricingCalculatorEmail", email);
-      
-      // Hide the overlay
-      emailFormOverlay.classList.add("hidden");
-    });
-  }
-
   contactsRange.addEventListener("input", function() {
     calculate();
     updateSliderBackground();
